@@ -2,9 +2,7 @@ package org.renova.configuration;
 
 
 import org.hibernate.jpa.HibernatePersistenceProvider;
-import org.renova.facede.FacedeService;
-import org.renova.model.entity.Department;
-import org.renova.repository.DepartmentRepository;
+import org.renova.facade.FacadeService;
 import org.renova.service.DepartmentService;
 import org.renova.service.LectureService;
 import org.renova.service.StudentService;
@@ -84,8 +82,8 @@ public class ApplicationConfig {
     }
 
     @Bean
-    FacedeService getFacedeService(){
-        return new FacedeService();
+    FacadeService getFacedeService(){
+        return new FacadeService();
     }
 
 
